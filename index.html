@@ -1,91 +1,111 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<!-- saved from url=(0092)file://localhost/Users/thomasflores/Documents/homework/DESN%20378/p3-myewu-portal/index.html -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>My Website</title>
+    <title>378 Starter</title>
     
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/styles.css" />    
+    <link rel="stylesheet" href="css/foundation.css">  
+    <link rel="stylesheet" href="css/styles.css">  
     
     <script src="js/vendor/modernizr.js"></script>
   
-  </head>
+  <meta class="foundation-data-attribute-namespace">
+  <meta class="foundation-mq-xxlarge">
+  <meta class="foundation-mq-xlarge">
+  <meta class="foundation-mq-large">
+  <meta class="foundation-mq-medium">
+  <meta class="foundation-mq-small">
+  <meta class="foundation-mq-topbar">
+</head>
   
   <body>
-  
-    <!-- Masthead -->
-    <header class="row">
-      <div class="large-12 columns">
-        <h1>MyEWU Portal</h1>
+    <header>
+      <div class="row">
+        <div class="columns left small-5"><h1><span>My EWU</span></h1></div>
+
+        <div class="columns small-7">
+          <ul class="inline-list right">
+            <li>Tasia Pele</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preferences</a></li>
+            <li><a href="#">Sign Out</a></li>
+          </ul>
+        </div>
+
+        <div class="bar columns red"></div>
       </div>
     </header>
 
-    <!-- Band of Content -->
-    <article class="row">
-      
-      <!-- Column 1 -->
-      <div class="large-6 columns">
-        <h2>Student Info.</h2>
-        
-        <!-- Student Info Tabs -->
-        <dl class="tabs" data-tab>
-          <dd class="active"><a href="#email">Email</a></dd>
-          <dd><a href="#accounts">Accounts</a></dd>
-          <dd><a href="#grades">Grades</a></dd>
-        </dl>
-
-        <div class="tabs-content">
-          <div class="content active" id="email">
-            <p>Email</p>
-          </div>
-          <div class="content" id="accounts">
-            <p>Accounts</p>
-          </div>
-          <div class="content" id="grades">
-            <p>Grades</p>
-          </div>
+    <div class="row">
+      <div class="columns small-12 medium-8">
+        <div class="bubbles">
+          <img src="img/myEWU_Nav.png">
+          <a href="#"><div id="eaglenet"></div></a>
+          <a href="#"><div id="facebook"></div></a>
+          <a href="#"><div id="twitter"></div></a>
+          <a href="#"><div id="email"></div></a>
+          <a href="#"><div id="canvas"></div></a>
+          <a href="#"><div id="wifi"></div></a>
+          <a href="#"><div id="tfs"></div></a>
+          <a href="#"><div id="alerts"></div></a>
+          <a href="#"><div id="ewuedu"></div></a>
+          <a href="#"><div id="office"></div></a>
+          <a href="#"><div id="word"></div></a>
+          <a href="#"><div id="you"></div></a>
         </div>
       </div>
-      
-      <!-- Column 2 -->
-      <div class="large-6 columns">
-        <h2>Column 2</h2>
-        
-        <ul class="side-nav">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-        </ul>
 
+      <div class="columns small-12 medium-4">
+        <dl class="accordion" data-accordion>
+          <dd>
+            <input type="checkbox" id="toggle-1">
+            <label class="kill" for="toggle-1">[<span>x</span>]</label>
+            <a href="#accAccountments">EWU Announcments</a>
+            <div id="accAccountments" class="content active">
+              EWU Announcments would be seen here.
+            </div>
+          </dd>
+          <dd>
+            <input type="checkbox" id="toggle-2">
+            <label class="kill" for="toggle-2">[<span>x</span>]</label>
+            <a href="#acc247">Eastern 24/7</a>
+            <div id="acc247" class="content">
+              Eastern 24/7 Content would be seen here.
+            </div>
+          </dd>
+          <dd>
+            <input type="checkbox" id="toggle-3">
+            <label class="kill" for="toggle-3">[<span>x</span>]</label>
+            <a href="#accNews">Lateset News</a>
+            <div id="accNews" class="content">
+              EWU Headlines would go here
+            </div>
+          </dd>
+          <dd>
+            <input type="checkbox" id="toggle-4">
+            <label class="kill" for="toggle-4">[<span>x</span>]</label>
+            <a href="#accFacebook">EWU on Facebook</a>
+            <div id="accFacebook" class="content">
+              The Facebook plugin would go here.
+            </div>
+          </dd>
+          <dd class="add">
+            <a href="#addPage">Add Page</a>
+            <div id="addPage" class="content">
+              A list of pages would be here where you can select new items to add to this page.
+            </div>
+          </dd>
+        </dl>
       </div>
-
-    </article> 
-    
-    <!-- Footer -->
-    <footer class="row">
-      
-      <div class="columns large-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
-      </div>
-
-      <div class="columns large-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
-      </div>
-
-      <div class="columns large-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
-      </div>
-
-    </footer>
-
+    </div>     
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/scripts.js"></script>
   
-  </body>
+  
 
-</html>
+
+</body></html>

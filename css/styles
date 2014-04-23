@@ -1,0 +1,11 @@
+/* Masthead */
+header {
+	position: relative;
+}
+
+header h1 {
+	position: absolute;
+	bottom: 0;
+	left: 48px;
+	font-size: 2em;
+}
